@@ -1,0 +1,131 @@
+		/* Theme-Name:Adhiti */
+		/* author: Ancy A */
+		/* Date:18/11/2020 */
+
+
+    /*--------------------login---------------------------*/
+
+      .bg-image{
+        background-image: url("../img/nopath.jpg");
+        background-size: cover;
+        background-position: center;
+
+      }
+      .border-set{
+        border: 2px solid #12679B;
+        border-radius: 20px;
+
+      }
+      .border-bot-set{
+        border-bottom: 1px solid #12679B;
+      }
+     
+    /*---------------------end login----------------------*/
+/* -------------------------------------------------------------starts admin page-------------------------------- */
+
+			
+                        body, html {
+                    height:100%;
+                  }
+
+                  .bg-clr{
+                    background-color: #12679B ;
+                  }
+                  .colr{
+                    color: #12679B;
+                  }
+                  
+                  
+
+                  
+                  
+
+                  
+                 
+          
+/*-------------------------------------ends admin page------------------------------------*/
+
+/* -----------------------------index ------------------------*/
+
+                      .back-image{
+                        background-image: url("../img/bgimage.png");
+                        background-size: cover;
+                        background-position: center;
+
+                      }
+                    .border-sett{
+                      
+                      border-radius: 15px;
+                    }
+                    .font-set{
+                      font: italic normal 400 20px/20px Segoe UI;
+                    }
+                    .font-set1{
+                      font: italic normal 400 20px/20px Segoe UI;
+                    }
+                    .border-setting{
+                      border-radius: 18px 0px 0px 18px;
+                    }
+                    .font-lg{
+                      font-size: 20px;
+                    }
+
+                    .color-set{
+                      background: #0D110378;
+                      
+                    }
+                    .color-set1{
+                      background: #0D1103A6;
+                      
+                    }
+                    .color-set2{
+                      background: #0D1103D6;
+                      
+                    }
+                    .color-set3{
+                      background: #020E00E3;
+                      
+                    }
+                    .color-set4{
+                      background: #020E00;
+                      height: 160px;
+                    }
+                    
+ /* -------------------------------------------------ends index page---------------------- */
+/* -------------------------------------------------starts success page---------------------- */
+
+                   .success{
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                   
+                    border-radius: 19px;
+                    
+                    
+                    width: 300px;
+                    margin-top: 100px !important;
+                   }
+                   .success button{
+                     border-radius: 50%;
+                     border: 3px solid;
+                   }
+                   
+                   .opacity-set{
+                   
+                    position:relative;
+                    background: rgba(0, 0, 0, 0.65);
+            
+                  }
+                  .opacity-set::before{
+                    content:"";
+                    background-image: url("../img/nopath.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    opacity:0.5;
+                    position:absolute;
+                    top:0;
+                    bottom:0;
+                    right:0;
+                    left:0;
+                    
+                    z-index:-3;
+                  }
+/* -------------------------------------------------ends success page---------------------- */

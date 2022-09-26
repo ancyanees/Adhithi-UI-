@@ -1,0 +1,133 @@
+/* Theme-Name:Adhiti */
+		/* author: Ancy A */
+		/* Date:18/11/2020 */
+
+
+/* -----------------------------media query index page-------------------------------------- */
+                    /* // Extra small devices (portrait phones, less than 576px) */
+                   
+                    @media (max-width: 575.98px) {
+                        .border-sett{
+                          width: 80% !important;
+                        }
+                        .border-setting{
+                          width: 60% !important;
+                          margin-left: auto;
+                        }
+                        .font-set1{
+                          height: 80px !important;
+                        }
+  
+                      }
+                      
+                      /* // Small devices (landscape phones, 576px and up) */
+                      @media (min-width: 576px) and (max-width: 767.98px) { 
+                        .font-set{
+                          font-size: 20px;
+                        }
+  
+                      }
+                      
+                      /* // Medium devices (tablets, 768px and up) */
+                      @media (min-width: 768px) and (max-width: 991.98px) { 
+                        .font-set{
+                          font-size: 45px;
+                        }
+                        .border-sett{
+                          width: 70% !important;
+                          margin-top: 30px !important;
+                          height: 50px !important;
+                        }
+                        .border-setting{
+                          width: 300px !important;
+                          margin-left: -200px !important;
+                          margin-top: 20px !important;
+                          
+                        }
+                        .margin-set{
+                          margin-top: 150px !important;
+                        }
+                        .explore-set{
+                          font-size: 30px !important;
+                          margin-top: -5px !important;
+                        }
+                        .explore{
+                          font-size: 30px !important;
+                        }
+                        .text-style{
+                          font-size: 35px !important;
+                        }
+  
+                      }
+                      
+                      /* // Large devices (desktops, 992px and up) */
+                      @media (min-width: 992px) and (max-width: 1199.98px) { 
+                        .font-set{
+                          font-size: 55px !important;
+                        }
+                        .border-sett{
+                            width: 65% !important;
+                            margin-top: 30px !important;
+                            height: 60px !important;
+                          }
+                          .explore-set{
+                            font-size: 35px !important;
+                            margin-top: -8px !important;
+                          }
+                          .explore{
+                            font-size: 35px !important;
+                          }
+                          .border-setting{
+                            width: 300px !important;
+                            margin-left: -155px !important;
+                            margin-top: 30px !important;
+                            
+                          }
+                          .text-style{
+                            font-size: 35px !important;
+                          }
+                          .margin-set{
+                            margin-top: 300px !important;
+                          }
+  
+                      }
+                      
+                      /* // Extra large devices (large desktops, 1200px and up) */
+                      @media (min-width: 1200px) {
+                        .font-set{
+                          font: italic normal 500 30px/30px Segoe UI;
+                        }
+  
+                       }
+                       
+                      
+                       
+                      
+                       
+
+/* ----------------------------------------------ends index page-------------------------------------------- */
+
+/* -------------------------------------------starts login page----------------------------------------- */
+
+                      /* // Small devices (landscape phones, 576px and up) */
+                      @media (min-width: 576px) { 
+                          
+                          
+
+                       }
+
+                      /* // Medium devices (tablets, 768px and up) */
+                      @media (min-width: 768px) { 
+
+                      }
+
+                      /* // Large devices (desktops, 992px and up) */
+                      @media (min-width: 992px) { 
+                       
+                      }
+
+                      /* // Extra large devices (large desktops, 1200px and up) */
+                      @media (min-width: 1200px) { 
+
+                      }
+/* ----------------------------------------------ends login page-------------------------------------------- */

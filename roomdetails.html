@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Adhithi</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="fa/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css">
+	</head>
+	<body>	
+		
+<!--------------------------------------------  header section ------------------------------------------>	<section>
+		<section>
+	   <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-clr b-3">
+            <div class="flex-row d-flex">
+                
+                <img src="img/" class="img-fluid w-25 image">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-weight-bolder h5" href=""><i class="fas fa-sign-out-alt"></i><span class="ml-2">Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </section>
+        <!-- Side Bar -->
+        <section class="mt-2">
+        <div class="container-fluid bg-colour" id="main">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <div class="col-md-3 col-lg-2 sidebar-offcanvas bg-clr pl-0" id="sidebar" role="navigation">
+                    <ul class="nav flex-column sticky-top pl-0 pt-5 mt-5">
+                        <li class="nav-item mt-4">
+                           <div class=" ml-3"> 
+                               <a class="nav-link small font-weight-bolder text-light" href="#">Booking Management</a>
+                            </div>
+                            
+                        </li>
+                        <li class="nav-item mt-3">
+                            <div class="ml-3 border border-light bg-light rounded">
+                                <a class="nav-link small font-weight-bolder colr" href="#">Room Management</a>
+                            </div>
+                            
+                        </li>
+                        <li class="nav-item mt-3">
+                            <div class="ml-3">
+                                <a class="nav-link text-light small font-weight-bolder" href="#">Reports Analytics</a>
+                            </div>
+                                 
+                              
+                        </li>
+                        <li class="nav-item mt-3">
+                           <div class="ml-3">
+                               <a class="nav-link text-light small font-weight-bolder" href="#">Hotel Lists</a>
+                            </div> 
+                               
+                                
+                        </li>
+                        <li class="nav-item mt-3">
+                            <div class="ml-3">
+                                <a class="nav-link text-light small font-weight-bolder" href="#">Payout</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <div class="ml-3">
+                                <a class="nav-link text-light small font-weight-bolder" href="#">Payment</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        <!--/col-->
+
+                <div class="col main pt-5 mt-3">
+                    <div class="row mb-3"></div>
+            <!--/row-->
+               
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-md-12">
+                            <div class="table-responsive mt-3">
+                              <!-- Table -->
+                              <h5 class="colr">Room Details</h5>
+                                <table class="table small table-bordered  mt-4">
+
+                                    <thead class="text-center bg-clr text-light">
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Room No</th>
+                                            <th scope="col">Room Features</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Edit </th>
+                                            
+                                          </tr>
+                                    </thead>
+                                   
+                                    <tbody class=" font-weight-bolder">
+                                        
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModal1">
+                                                    <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                  </button>
+                                                  
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title text-dark" id="exampleModalLabel1">Room Details</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="text-dark">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomno">Room No</label>
+                                                                        <input type="text" class="form-control" id="roomno" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomtype">Room Type</label>
+                                                                        <input type="text" class="form-control" id="roomtype" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="features">Features</label>
+                                                                        
+                                                                        <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                        <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" id="description"></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                    <!-- <div class="form-group col-md-6">
+                                                                        <label for="rimage">Room Image</label>
+                                                                        <input type="text" class="form-control text-right image-inside">
+                                                                    </div> -->
+                                                                    <!-- <div class="custom-file form-group ">
+                                                                        
+                                                                        <input type="file" class="custom-file-input custom-control-input" id="validatedCustomFile" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                    </div>
+                                                                    <div class="custom-file form-group ">
+                                                                        
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                    </div> -->
+                                                                
+                                                                    <div class="form-row custom-file">
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                            <label class="custom-file-label font-weight-bolder" for="validatedCustomFile">Room Image</label>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                            <label class="custom-file-label font-weight-bolder" for="validatedCustomFile">Featured Image</label>
+                                                                        </div>
+                                                                    </div>
+                                                                <div class="form-row py-3">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="price">Price</label>
+                                                                        <input type="text" class="form-control" id="price" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="tax">Tax</label>
+                                                                        <input type="text" class="form-control" id="tax" required>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                              </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                                          <button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                            
+                                        </div>
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModal2">
+                                                    <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                  </button>
+                                                  
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title text-dark" id="exampleModalLabel2">Room Details</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="text-dark">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomno">Room No</label>
+                                                                        <input type="text" class="form-control" id="roomno" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomtype">Room Type</label>
+                                                                        <input type="text" class="form-control" id="roomtype" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="features">Features</label>
+                                                                        
+                                                                        <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                        <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" id="description" required></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="form-row custom-file">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row py-3">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="price">Price</label>
+                                                                        <input type="text" class="form-control" id="price" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="tax">Tax</label>
+                                                                        <input type="text" class="form-control" id="tax" required>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                              </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                            
+                                        </div>
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                    <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModa3">
+                                                        <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                      </button>
+                                                      
+                                                      <!-- Modal -->
+                                                      <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                          <div class="modal-content">
+                                                            <div class="modal-header">
+                                                              <h5 class="modal-title text-dark" id="exampleModalLabel">Room Details</h5>
+                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                              </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form class="text-dark">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="roomno">Room No</label>
+                                                                            <input type="text" class="form-control" id="roomno" required>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="roomtype">Room Type</label>
+                                                                            <input type="text" class="form-control" id="roomtype" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="features">Features</label>
+                                                                            <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                            <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="description">Description</label>
+                                                                            <textarea class="form-control" id="description" required></textarea>
+                                                                        </div>
+                                                                    
+                                                                    </div>
+                                                                    <div class="form-row custom-file">
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                            <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                            <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row py-3">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="price">Price</label>
+                                                                            <input type="text" class="form-control" id="price" required>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="tax">Tax</label>
+                                                                            <input type="text" class="form-control" id="tax" required>
+                                                                        </div>
+                                                                    
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                    
+                                                                  </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary">Save Changes</button>
+                                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                              
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    
+                                                
+                                            </div>
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModal4">
+                                                    <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                  </button>
+                                                  
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title text-dark" id="exampleModalLabel4">Room Details</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="text-dark">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomno">Room No</label>
+                                                                        <input type="text" class="form-control" id="roomno" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomtype">Room Type</label>
+                                                                        <input type="text" class="form-control" id="roomtype" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="features">Features</label>
+                                                                        <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                        <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" id="description" required></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="form-row custom-file">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row py-3">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="price">Price</label>
+                                                                        <input type="text" class="form-control" id="price" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="tax">Tax</label>
+                                                                        <input type="text" class="form-control" id="tax" required>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                              </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                            
+                                        </div>
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModal5">
+                                                    <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                  </button>
+                                                  
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title text-dark" id="exampleModalLabel5">Room Details</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="text-dark">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomno">Room No</label>
+                                                                        <input type="text" class="form-control" id="roomno" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomtype">Room Type</label>
+                                                                        <input type="text" class="form-control" id="roomtype" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="features">Features</label>
+                                                                        <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                        <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" id="description" required></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="form-row custom-file">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row py-3">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="price">Price</label>
+                                                                        <input type="text" class="form-control" id="price" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="tax">Tax</label>
+                                                                        <input type="text" class="form-control" id="tax" required>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                              </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                            
+                                        </div>
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">6</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModal6">
+                                                    <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                  </button>
+                                                  
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title text-dark" id="exampleModalLabel6">Room Details</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="text-dark">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomno">Room No</label>
+                                                                        <input type="text" class="form-control" id="roomno" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomtype">Room Type</label>
+                                                                        <input type="text" class="form-control" id="roomtype" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="features">Features</label>
+                                                                        <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                        <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" id="description" required></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="form-row custom-file">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row py-3">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="price">Price</label>
+                                                                        <input type="text" class="form-control" id="price" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="tax">Tax</label>
+                                                                        <input type="text" class="form-control" id="tax" required>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                              </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                            
+                                        </div>
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">7</th>
+                                        <td>155</td>
+                                        <td>Single rooms have a double bed (1,500 mm x 2,030 mm) although bed sizes may change depending on the hotel. 
+                                            </td>
+                                        <td>1200/-</td>
+                                        <td>
+                                            <div class=" border rounded border-dark">
+                                                
+                                                <button type="button" class="btn btn-border text-primary" data-toggle="modal" data-target="#exampleModal7">
+                                                    <i class="far fa-edit ml-3"></i><span class="ml-1 font-weight-bolder">Edit</span>
+                                                  </button>
+                                                  
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title text-dark" id="exampleModalLabel7">Room Details</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="text-dark">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomno">Room No</label>
+                                                                        <input type="text" class="form-control" id="roomno" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="roomtype">Room Type</label>
+                                                                        <input type="text" class="form-control" id="roomtype" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="features">Features</label>
+                                                                        <input class="form-control " type="text" id="languages" data-role="tagsinput" required="required" />
+                                                                        <small id="emailHelp" class="form-text text-muted">Adding features</small>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="description">Description</label>
+                                                                        <textarea class="form-control" id="description" required></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                <div class="form-row custom-file">
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Room Image</label>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <input type="file" class="custom-file-input form-control" id="validatedCustomFile1" required>
+                                                                        <label class="custom-file-label" for="validatedCustomFile">Featured Image</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row py-3">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="price">Price</label>
+                                                                        <input type="text" class="form-control" id="price" required>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="tax">Tax</label>
+                                                                        <input type="text" class="form-control" id="tax" required>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                              </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                
+                                            
+                                        </div>
+                                        </td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                    </div>
+                </div>
+            <!--/row-->
+
+            </div>
+        <!--/main col-->
+        </div>
+
+    </div>
+<!--/.container-->
+
+
+</section>
+
+          
+              
+                
+               
+               
+            
+               
+
+<!-------------------------------------------- ends section ------------------------------------------>	
+
+		
+
+
+
+			
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
+		
+	</body>
+</html>
